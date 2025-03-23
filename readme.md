@@ -113,27 +113,34 @@ If no updates appear, send another message and refresh again.
 ## Example Output in Telegram
 
 ```markdown
-User ID: 123456789
-Email: user@example.com
-Phone Number: +1234567890
-Friends: 42
-Guilds: 15
+User ID: 13213131455151: example@gmail.com Phone Number: +123412361:
+Friends: 70
+Guilds: 59
 Admin Permissions:
+ㅤ- [_____________'s server]: 11
+MFA Enabled: False
+Flags: 160
+Locale: en
+Verified: True
+Payment Methods:
+Amount: 2
+Valid Methods: 0 method(s)  
+**mastercard**
 
-- [Server Name]: 5000 members; .gg/invite
-  MFA Enabled: True
-  Flags: 256
-  Locale: en-US
-  Verified: True
-  Nitro Informations:
-  Has Nitro: True
-  Expiration Date: 31/12/2023 at 23:59:59
-  Boosts Available: 2 - Available now - Available on 01/01/2024 at 12:00:00
-  IP: 192.168.1.1
-  Username: WindowsUser
-  PC Name: DESKTOP-ABC123
-  Token Location: Discord
-  Token: [Spoiler-hidden token]
+Name: ABC
+country: en
+last 4 digits: 0000
+**Paypal**
+
+Email: example@gmail.com
+Name: abc
+country: TH
+
+IP: 1.1.11.11
+Username: abc
+PC Name: DESKTOP-abc
+Token Location: Discord
+Token: [Spoiler-hidden token]
 ```
 
 ## Configuration
