@@ -112,27 +112,29 @@ If no updates appear, send another message and refresh again.
 
 ## Example Output in Telegram
 
-1. **The script sends a message like this**:
-   User ID: 123456789
-   Email: user@example.com
-   Phone Number: +1234567890
-   Friends: 42
-   Guilds: 15
-   Admin Permissions:
-   - [Server Name]: 5000 members; .gg/invite
-     MFA Enabled: True
-     Flags: 256
-     Locale: en-US
-     Verified: True
-     Nitro Informations:
-     Has Nitro: True
-     Expiration Date: 31/12/2023 at 23:59:59
-     Boosts Available: 2 - Available now - Available on 01/01/2024 at 12:00:00
-     IP: 192.168.1.1
-     Username: WindowsUser
-     PC Name: DESKTOP-ABC123
-     Token Location: Discord
-     Token: [Spoiler-hidden token]
+```bash
+User ID: 123456789
+Email: user@example.com
+Phone Number: +1234567890
+Friends: 42
+Guilds: 15
+Admin Permissions:
+
+- [Server Name]: 5000 members; .gg/invite
+  MFA Enabled: True
+  Flags: 256
+  Locale: en-US
+  Verified: True
+  Nitro Informations:
+  Has Nitro: True
+  Expiration Date: 31/12/2023 at 23:59:59
+  Boosts Available: 2 - Available now - Available on 01/01/2024 at 12:00:00
+  IP: 192.168.1.1
+  Username: WindowsUser
+  PC Name: DESKTOP-ABC123
+  Token Location: Discord
+  Token: [Spoiler-hidden token]
+```
 
 ## Configuration
 
@@ -160,3 +162,11 @@ If no updates appear, send another message and refresh again.
 ## Disclaimer
 
 - For educational purposes only. The author is not liable for misuse or consequences.
+
+```
+
+```
+
+```
+
+```
