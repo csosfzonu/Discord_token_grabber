@@ -124,13 +124,14 @@ Locale: en
 Verified: True
 Payment Methods:
 Amount: 2
-Valid Methods: 0 method(s)  
-**mastercard**
+Valid Methods: 0 method(s)
+
+`mastercard`
 
 Name: ABC
 country: en
 last 4 digits: 0000
-**Paypal**
+`Paypal`
 
 Email: example@gmail.com
 Name: abc
