@@ -52,7 +52,7 @@ This Python script extracts Discord tokens from various applications on a Window
 
    3.6 Add your bot to the target channel as an administrator.
 
-   3.7 Swap `<YOUR_BOT_TOKEN>` with your bot token in this URL:  
+   3.7 `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`Swap `<YOUR_BOT_TOKEN>` with your bot token in this URL:  
     For instance, if your token is `12345`, the URL becomes:  
     `https://api.telegram.org/bot12345/getUpdates`
 
