@@ -34,33 +34,32 @@ This Python script extracts Discord tokens from various applications on a Window
 2. **Install Dependencies**:
    The script automatically installs missing modules (`pypiwin32`, `pycryptodome`) on first run. Alternatively, install them manually:
    pip install pypiwin32 pycryptodome requests bcrypt
-3. **Telegram Bot Setup Guide**:
 
-   **Step 1: Create a Telegram Bot**
+## 3. **Telegram Bot Setup Guide** 🛠️
 
-   3.1 Open BotFather on Telegram.
+### **Step 1: Create a Telegram Bot** 🤖
 
-   3.2 Use the `/newbot` command to create a new bot.
+3.1 Open **BotFather** on Telegram by visiting [https://t.me/BotFather](https://t.me/BotFather).  
+3.2 Type `/newbot` in the chat to start creating your bot.  
+3.3 Follow BotFather’s instructions to set a **name** and **username** for your bot.  
+3.4 After creation, you’ll get a **Bot Token**. Copy and save it somewhere safe!  
+3.5 Example Token: `12345:ABCDEF...` _(Yours will be longer!)_
 
-   3.3 Follow the instructions to set a name and username for your bot.
+---
 
-   3.4 Once the bot is created, you will receive a Bot Token. Save this token for later use.
+### **Step 2: Get Your Channel ID** 📡
 
-   3.5 Example Token: `12345`
+3.6 Add your bot to the target channel as an **administrator**.  
+3.7 Take this URL: `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
 
-   **Step 2: Get Your Channel ID**
-
-   3.6 Add your bot to the target channel as an administrator.
-
-   3.7 `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`Swap `<YOUR_BOT_TOKEN>` with your bot token in this URL:  
-    For instance, if your token is `12345`, the URL becomes:  
-    `https://api.telegram.org/bot12345/getUpdates`
-
-   3.8 Open that URL in your browser (e.g., Chrome).
-
-   3.9 Send a message in the channel where your bot is added.
-
-   3.10 Reload the browser page to see a JSON response. Look for the `chat` section:
+- Swap `<YOUR_BOT_TOKEN>` with your actual token.
+- Example: If your token is `12345:ABCDEF...`, it becomes:
+- https://api.telegram.org/bot12345:ABCDEF.../getUpdates
+  3.8 Open that URL in your browser (e.g., Chrome).  
+  3.9 Send a quick message in the channel where your bot is added.  
+  3.10 Reload the browser page. You’ll see a JSON response—find the `chat` section:
+- Look for: `"id"`
+- That’s your **Channel ID**!
 
 ```json
 {
