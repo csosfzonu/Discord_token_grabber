@@ -112,7 +112,7 @@ If no updates appear, send another message and refresh again.
 
 ## Example Output in Telegram
 
-```bash
+```markdown
 User ID: 123456789
 Email: user@example.com
 Phone Number: +1234567890
