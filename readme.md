@@ -2,7 +2,7 @@
 
 This Python script extracts Discord tokens from various applications on a Windows machine, retrieves user information (e.g., Nitro status, friends, guilds), and sends the data to a Telegram chat via the Telegram API.
 
-**Warning**: This script accesses sensitive user data (e.g., Discord tokens, payment methods). Use it responsibly and legally. Sharing or using this script to harm others may violate Discord's Terms of Service and local laws.
+> **⚠️ Warning**: This script accesses sensitive information (e.g., Discord tokens, payment methods). Use it responsibly and legally. Unauthorized use may violate Discord's Terms of Service and local laws.
 
 ## Features
 
