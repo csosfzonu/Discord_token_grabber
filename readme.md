@@ -45,7 +45,7 @@ This Python script extracts Discord tokens from various applications on a Window
    3.3 Follow the instructions to set a name and username for your bot.
 
    3.4 Once the bot is created, you will receive a Bot Token. Save this token for later use.
-   3.5.Example Token: 12345:ABCDEF...
+   3.5 Example Token: 12345:ABCDEF...
 
 ```json
 {
