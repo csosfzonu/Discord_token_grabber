@@ -35,15 +35,17 @@ This Python script extracts Discord tokens from various applications on a Window
 2. **Install Dependencies**:
    The script automatically installs missing modules (`pypiwin32`, `pycryptodome`) on first run. Alternatively, install them manually:
    pip install pypiwin32 pycryptodome requests bcrypt
-3. **Set Up Telegram Bot**:
+3. **Telegram Bot Setup Guide**:
+   **Step 1: Create a Telegram Bot**
 
-- Create a Telegram bot via [BotFather](https://t.me/BotFather) and get your bot token (e.g., `12345:ABCDEF...`).
-  1. Replace `<YOUR_BOT_TOKEN>` with your Telegram Bot Token:
-     Example: If your token is `12345:ABCDEF...`, the URL becomes:
-     https://api.telegram.org/bot12345:ABCDEF.../getUpdates
-  2. Open this URL in a browser (e.g., Chrome).
-  3. Add your bot to the target channel and send a message in that channel.
-  4. Refresh the browser page. You’ll see a JSON response like this:
+   - Open BotFather on Telegram.
+
+   - Use the /newbot command to create a new bot.
+
+   - Follow the instructions to set a name and username for your bot.
+
+   - Once the bot is created, you will receive a Bot Token. Save this token for later use.
+   - Example Token: 12345:ABCDEF...
 
 ```json
 {
