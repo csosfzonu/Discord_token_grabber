@@ -38,14 +38,14 @@ This Python script extracts Discord tokens from various applications on a Window
 3. **Telegram Bot Setup Guide**:
    **Step 1: Create a Telegram Bot**
 
-   - Open BotFather on Telegram.
+   1.Open BotFather on Telegram.
 
-   - Use the /newbot command to create a new bot.
+   2.Use the /newbot command to create a new bot.
 
-   - Follow the instructions to set a name and username for your bot.
+   3.Follow the instructions to set a name and username for your bot.
 
-   - Once the bot is created, you will receive a Bot Token. Save this token for later use.
-   - Example Token: 12345:ABCDEF...
+   4.Once the bot is created, you will receive a Bot Token. Save this token for later use.
+   5.Example Token: 12345:ABCDEF...
 
 ```json
 {
