@@ -35,6 +35,7 @@ This Python script extracts Discord tokens from various applications on a Window
    The script automatically installs missing modules (`pypiwin32`, `pycryptodome`) on first run. Alternatively, install them manually:
    pip install pypiwin32 pycryptodome requests bcrypt
 3. **Telegram Bot Setup Guide**:
+
    **Step 1: Create a Telegram Bot**
 
    3.1 Open BotFather on Telegram.
