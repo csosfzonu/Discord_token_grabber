@@ -55,9 +55,56 @@ This Python script extracts Discord tokens from various applications on a Window
 2. **Run the Script:**
 
 ```bash
-python main.py
+    python main.py
 ```
 
-- It will:Search for tokens in supported applications.
-  Decrypt and validate them.
-  Send data to your Telegram chat.
+## Example Output in Telegram
+
+1. **The script sends a message like this**:
+   User ID: 123456789
+   Email: user@example.com
+   Phone Number: +1234567890
+   Friends: 42
+   Guilds: 15
+   Admin Permissions:
+   - [Server Name]: 5000 members; .gg/invite
+     MFA Enabled: True
+     Flags: 256
+     Locale: en-US
+     Verified: True
+     Nitro Informations:
+     Has Nitro: True
+     Expiration Date: 31/12/2023 at 23:59:59
+     Boosts Available: 2 - Available now - Available on 01/01/2024 at 12:00:00
+     IP: 192.168.1.1
+     Username: WindowsUser
+     PC Name: DESKTOP-ABC123
+     Token Location: Discord
+     Token: [Spoiler-hidden token]
+
+## Configuration
+
+- **Custom Chat ID**: Edit chat_id in the data dictionary to send to a different Telegram chat.
+- **Custom Photo**: Modify get_image() to change avatar size or use a different image URL.
+- **Add Platforms**: Extend the PATHS dictionary to support more applications.
+
+## Security Notes
+
+- **Token Exposure**: The script sends the Discord token in a Telegram message (hidden with <tg-spoiler>). Ensure your Telegram chat is private and secure.
+- **Local Storage**: Tokens are extracted from Local Storage\leveldb. Avoid running on shared or untrusted machines.
+- **Encryption**: Tokens are decrypted using Windows DPAPI and AES-GCM. Keep your system secure to prevent key leaks.
+
+## Troubleshooting
+
+- **Permission Denied**: Run as Administrator.
+
+- **Telegram Errors**: Verify bot token and chat ID if sendPhoto fails (check res.json() output).
+- **Module Issues**: Ensure internet connection for auto-install.
+
+## License
+
+- **Unlicensed**. Use at your own risk.
+
+## Disclaimer
+
+- For educational purposes only. The author is not liable for misuse or consequences.
