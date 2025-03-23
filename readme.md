@@ -38,7 +38,37 @@ This Python script extracts Discord tokens from various applications on a Window
 3. **Set Up Telegram Bot**:
 
 - Create a Telegram bot via [BotFather](https://t.me/BotFather) and get your bot token (e.g., `12345:ABCDEF...`).
-- Get your chat ID (e.g., `-ๅ23456789`) by messaging your bot and using a service like `@GetIDsBot`.
+- 1. Replace `<YOUR_BOT_TOKEN>` with your Telegram Bot Token:
+  - Example: If your token is `12345:ABCDEF...`, the URL becomes:
+    https://api.telegram.org/bot12345:ABCDEF.../getUpdates
+- 2. Open this URL in a browser (e.g., Chrome).
+- 3. Add your bot to the target channel and send a message in that channel.
+- 4. Refresh the browser page. You’ll see a JSON response like this:
+
+```json
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 123456789,
+      "channel_post": {
+        "message_id": 1,
+        "chat": {
+          "id": "This is your channel id.",
+          "title": "Your Channel Name",
+          "type": "channel"
+        },
+        "date": 1698765432,
+        "text": "Hello"
+      }
+    }
+  ]
+}
+```
+
+**Notes**
+Ensure your bot is added to the channel as an admin.
+If no updates appear, send another message and refresh again.
 
 ## Usage
 
