@@ -53,9 +53,11 @@ This Python script extracts Discord tokens from various applications on a Window
 - Swap `<YOUR_BOT_TOKEN>` with your actual token.
 - Example: If your token is `12345:ABCDEF...`, it becomes:
 - https://api.telegram.org/bot12345:ABCDEF.../getUpdates
+
   3.8 Open that URL in your browser (e.g., Chrome).  
   3.9 Send a quick message in the channel where your bot is added.  
   3.10 Reload the browser page. You’ll see a JSON response—find the `chat` section:
+
 - Look for: `"id"`
 - That’s your **Channel ID**!
 
