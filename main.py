@@ -9,7 +9,6 @@ import re
 import base64
 import datetime
 import requests
-import bcrypt
 def install_import(modules):
     for module, pip_name in modules:
         try:
